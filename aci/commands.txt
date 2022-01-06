@@ -1,0 +1,5 @@
+#while SSH'd in a Cisco ACI APIC - pull leaf and spine hostnames and IP addresses
+acidiag fnvread
+
+#while SSH'd in a Cisco ACI Leaf - source a ping from a tenant and EPG to remote target; this MAY be version dependent
+iping -V <tenant>:<tenant_epg> i.i.i.i
