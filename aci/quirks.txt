@@ -1,0 +1,7 @@
+#This came to light with production fabric and 'generation 1 edge leafs' resulting in random instances of client and server flows failing by blackholing traffic; this behavior was prevalent on older Cisco ACI hardware and software, this behavior has changed in 'generation 2' and beyond hardware and software
+'System' > 'System Settings' > 'Fabric-Wide Settings' > 'Disable Remote EP Learning' (enabled if disabled)
+
+https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-739989.html
+https://community.cisco.com/t5/application-centric/aci-disable-remote-ep-learn/td-p/4062054
+https://www.cisco.com/c/en/us/solutions/collateral/data-center-virtualization/application-centric-infrastructure/white-paper-c11-739989.html#DisableRemoteEPLearn
+https://www.ciscolive.com/c/dam/r/ciscolive/us/docs/2019/pdf/BRKACI-2641.pdf
