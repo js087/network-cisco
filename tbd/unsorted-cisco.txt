@@ -1,0 +1,38 @@
+Command ### Notes ### Device ### Types
+show l2vpn forwarding bridge-domain mac-address location 0/0/CPU0 | inc ### Shows arps originating interface instead of the physical loop ### CRS ### 
+show l2vpn xconnect group(s) ### Similar to "show configuration groups in Jun" ### CRS ### EoMPLS PW
+show l2vpn xconnect interface gix/x/x/x.xxxx ### Short way of looking up an xconnect health. ### CRS ### EoMPLS PW
+show mpls forwarding ###  ###  ### EoMPLS PW
+show mpls forwarding exact-route label 1 bottom-label 16001 ###  ###  ### EoMPLS PW
+ping mpls pseudowire <remote-pe Lo10> <pw-id> ###  ###  ### EoMPLS PW
+show mpls ldp discovery ###  ###  ### MPLS Core
+show mpls ldp neighbor brief ###  ###  ### MPLS Core
+show mpls ldp forwarding prefix <remote-pe Lo10>/32 detail ###  ###  ### MPLS Core
+ping mpls ipv4 <remote-router Lo10>/32 ###  ###  ### MPLS Core
+show l2vpn forwarding interface <subinterface> detail location r/s/cpu0 ### !Location should be the module that the AC is located on ###  ### NNI Int
+show vlan interface ###  ###  ### NNI Int
+show interface ###  ###  ### NNI Int
+monitor interface ###  ###  ### NNI Int
+show l2vpn bridge-domain ###  ###  ### ELAN - Bridge Domains
+show l2vpn bridge-domain bd-name <name> detail ###  ###  ### ELAN - Bridge Domains
+show l2vpn forwarding bridge-domain mac-address location r/s/cpu0 ### Finding MAC addresses from the l2vpn ###  ### ELAN - Bridge Domains
+show l2vpn forwarding bridge-domain mac-address interface <AC> location r/s/cpu0 ###  ###  ### ELAN - Bridge Domains
+show l2vpn forwarding bridge-domain mac-address neighbor <remote-pe Lo10> location r/s/cpu0 ###  ###  ### ELAN - Bridge Domains
+show l2vpn capability ###  ###  ### Other useful commands
+show l2vpn xconnect state down ###  ###  ### Other useful commands
+show interface description | in "EDIA|EPL|EVPL|ELAN“ ###  ###  ### Other useful commands
+show tech-support l2vpn file harddisk:<filename> compressed ### !show tech takes a long time to run and is quite large.  Put on harddisk or send direct to tftp server ###  ### Other useful commands
+show platform ### Shows linecards ###  ### 
+show inventory xxxxx ### Shows linecards and ports ###  ### 
+show l2vpn bridge-domain bd-name accountid-xxxxxx detail ### Good way to see why things are down; -detail would've is summary ###  ### 
+show conn address i.i.i.i ###  ### Cisco ASA ### 
+show local-host <i.i.i.i> ###  ### Cisco ASA ### 
+show interfaces counters rates ### Seems to be hit or miss on some NX platforms ### Cisco NX ### 
+ ###  ###  ### 
+ ###  ###  ### 
+ ###  ###  ### 
+ ###  ###  ### 
+ ###  ###  ### 
+ ###  ###  ### 
+ ###  ###  ### 
+ ###  ###  ### 
