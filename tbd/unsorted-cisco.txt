@@ -28,11 +28,3 @@ show l2vpn bridge-domain bd-name accountid-xxxxxx detail ### Good way to see why
 show conn address i.i.i.i ###  ### Cisco ASA ### 
 show local-host <i.i.i.i> ###  ### Cisco ASA ### 
 show interfaces counters rates ### Seems to be hit or miss on some NX platforms ### Cisco NX ### 
- ###  ###  ### 
- ###  ###  ### 
- ###  ###  ### 
- ###  ###  ### 
- ###  ###  ### 
- ###  ###  ### 
- ###  ###  ### 
- ###  ###  ### 
